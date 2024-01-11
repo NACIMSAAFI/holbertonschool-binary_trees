@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "binary_trees.h"
 
 /* Original code from http://stackoverflow.com/a/13755911/5184480 */
@@ -65,7 +62,7 @@ static size_t _height(const binary_tree_t *tree)
  *
  * @tree: Pointer to the root node of the tree to print
  */
-void binary_tree_print(binary_tree_t *tree)
+void binary_tree_print(const binary_tree_t *tree)
 {
 	char **s;
 	size_t height, i, j;
@@ -95,5 +92,6 @@ void binary_tree_print(binary_tree_t *tree)
 		printf("%s\n", s[i]);
 		free(s[i]);
 	}
+
 	free(s);
 }
