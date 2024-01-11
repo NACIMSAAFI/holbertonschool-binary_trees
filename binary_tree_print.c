@@ -65,7 +65,7 @@ static size_t _height(const binary_tree_t *tree)
  *
  * @tree: Pointer to the root node of the tree to print
  */
-void binary_tree_print(const binary_tree_t *tree)
+void binary_tree_print(binary_tree_t *tree)
 {
 	char **s;
 	size_t height, i, j;
